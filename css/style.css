@@ -84,26 +84,32 @@ letter-spacing: 0.06em;
 }
 
 .adv-item::before {
+    content: '';
+    height: 120px;
     display: block;
-    background-image: url('../img/attention.svg');
-    background-size: contain;
-    content: "";
-    max-width: 70px;
-    max-height: 70px;
-    align-content: center;
-    background-color: var(--btn-background-color);
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-bottom: 25px;
-    padding-top: 25px;
+    
+    background-size: 70px;
     background-repeat: no-repeat;
-    margin-bottom: 30px;
+    background-position: center ;
+    background-color: var(--btn-background-color);
     border-radius: 4px;
 }
 
-.adv-item::before:hover {
-    border: 2px solid var(--accent-color);
+.icon-attention::before {
+    background-image: url(../img/attention.svg);
 }
+.icon-punctuality::before {
+    background-image: url(../img/punctuality.svg);
+}
+
+.icon-planning::before {
+    background-image: url(../img/planning.svg);
+}
+
+.icon-technologies::before {
+    background-image: url(../img/technologies.svg);
+}
+
 
 .adv-heading {
     font-weight: bold;
@@ -112,6 +118,7 @@ letter-spacing: 0.06em;
     text-transform: uppercase;
     margin-top: 0px;
     margin-bottom: 10px;
+    padding-top: 30px;
 
 }
 
@@ -169,7 +176,6 @@ letter-spacing: 0.06em;
     line-height: 1.14;
     text-align: center;
     text-transform: uppercase;
-    border-radius: 0px 0px 4px 4px;
     padding-top:27px;
     padding-bottom: 27px;
     margin: 0;
@@ -301,7 +307,10 @@ letter-spacing: 0.06em;
     line-height: 1.6;
     text-align: center;
     border-radius: 4px;
+    border: 0;
     background: #F5F4FA;
+    padding: 6px 22px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 3px 1px rgba(0, 0, 0, 0.1);
 }
 .filter .btn-item:not(:last-child) {
     margin-right: 8px;
@@ -312,6 +321,10 @@ letter-spacing: 0.06em;
     color: var(--background-color);
     background-color: var(--accent-color);
     font-family: inherit;
+}
+
+.btn:focus {
+    border: 0;
 }
 
 /* Страница портфолио */
