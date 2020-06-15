@@ -189,29 +189,18 @@ nav {
     text-decoration: none;
     margin-left: 10px;
 }
-
-.contact-list.mail::before {
-    display: inline-block;
-    background-image: url('../img/mail.svg');
-    background-size: contain;
-    content: "";
-    width: 16px; 
+.mail{
+    width: 16px;
     height: 11.2px;
-    align-items: center;
+    fill: var(--primary-text-color);
+    padding: 0;
 }
-
-.contact-list.phone::before {
-    display: inline-block;
-    background-image: url('../img/phone.svg');
-    background-size: contain;
-    content: "";
+.phone{
     width: 10px;
     height: 14.94px;
-
-    
+    padding: 0;
 
 }
-
 .nav-phone:hover {
     color: var(--accent-color);
 }
@@ -305,7 +294,12 @@ footer {
     background-color:rgba(255, 255, 255, 0.1);
     padding: 12px;
     border-radius: 50%;
+    align-items: baseline;
 
+}
+
+.footer-link:hover {
+    background-color: var(--accent-color);
 }
 
 .footer-social-links-list .footer-social-links:not(:last-child){
