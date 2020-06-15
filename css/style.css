@@ -218,7 +218,7 @@ letter-spacing: 0.06em;
     margin-bottom: 10px;
 }
 
-.social-links-icons {
+ul {
     display: flex;
 }
 
