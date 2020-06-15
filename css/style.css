@@ -17,6 +17,7 @@
     --studio-color: #000000;
     --btn-background-color: #F5F4FA;
     --services-color: rgba(47, 48, 58, 0.8);
+    --icons-color: #AFB1B8;
 }
 
 /* Герой */
@@ -217,6 +218,11 @@ letter-spacing: 0.06em;
     margin-bottom: 10px;
 }
 
+.social-links-icons {
+    display: flex;
+}
+
+
 .speciality {
     color: var(--primary-text-color);
     font-weight: normal;
@@ -224,35 +230,26 @@ letter-spacing: 0.06em;
     line-height: 1.18;
     text-align: center;
 }
-
-.social-liks-icons.social-links-item::after {
-    display: inline-block;
-    background-image: url('../img/instaprofile.svg');
-    background-size: contain;
-    content: "";
-    width: 43.99px; 
-    height: 43.99px;
-    align-items: center;
-    ;
-    
+.icon-social-links {
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    fill: var(--icons-color);
 }
 
-.team-member::after {
-    display: inline-block;
-    background-image: url('../img/instaprofile.svg');
-    background-size: contain;
-    content: "";
-    width: 43.99px; 
-    height: 43.99px;
-    align-items: center;
-    ;
-    
+.icon-social-links:hover {
+    fill: var(--background-color); 
 }
 
-.social-liks-item:hover {
+.link:hover {
     background-color: var(--accent-color);
     border-radius: 50%;
+    padding: 12px;
 }
+
+
 /* Клиенты */
 
 .clients-ul {

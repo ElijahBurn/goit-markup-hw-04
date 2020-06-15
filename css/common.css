@@ -294,12 +294,18 @@ footer {
     
 }
 
-.footer-social-links {
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 44px;
+.icon-social-links-footer {
+    fill: var(--background-color);
+    width: 20px;
+    height: 20px;
+    padding: 0;
+}
+
+.footer-link {
+    background-color:rgba(255, 255, 255, 0.1);
     padding: 12px;
-    display: flex;
-    align-content: center;
+    border-radius: 50%;
+
 }
 
 .footer-social-links-list .footer-social-links:not(:last-child){
